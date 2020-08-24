@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  WelcomeVC.swift
 //  QuickChat
 //
 //  Created by Alexander on 24.08.2020.

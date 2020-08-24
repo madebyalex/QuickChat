@@ -13,7 +13,7 @@ class RegisterVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        self.title = "Register"
     }
 
 }
