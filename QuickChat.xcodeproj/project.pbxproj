@@ -18,6 +18,7 @@
 		116EB30E24F41BB200EE3465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116EB30C24F41BB200EE3465 /* LaunchScreen.storyboard */; };
 		116EB31624F41DFA00EE3465 /* _fonts in Resources */ = {isa = PBXBuildFile; fileRef = 116EB31524F41DFA00EE3465 /* _fonts */; };
 		116EB31824F4333800EE3465 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EB31724F4333800EE3465 /* RoundedButton.swift */; };
+		5CBDDF8020C900F006F12CB6 /* Pods_QuickChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3219FB6ED47B8B180698A61 /* Pods_QuickChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,9 @@
 		116EB30F24F41BB200EE3465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		116EB31524F41DFA00EE3465 /* _fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _fonts; sourceTree = "<group>"; };
 		116EB31724F4333800EE3465 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		240747936C63AE76E75E826A /* Pods-QuickChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickChat.release.xcconfig"; path = "Target Support Files/Pods-QuickChat/Pods-QuickChat.release.xcconfig"; sourceTree = "<group>"; };
+		4792BA599F44DF617D264BDB /* Pods-QuickChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickChat.debug.xcconfig"; path = "Target Support Files/Pods-QuickChat/Pods-QuickChat.debug.xcconfig"; sourceTree = "<group>"; };
+		A3219FB6ED47B8B180698A61 /* Pods_QuickChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CBDDF8020C900F006F12CB6 /* Pods_QuickChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +57,8 @@
 			children = (
 				116EB30024F41BAE00EE3465 /* QuickChat */,
 				116EB2FF24F41BAE00EE3465 /* Products */,
+				648640FB777DA063AF386525 /* Pods */,
+				CD35F3E670B95904BF30485A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +113,24 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		648640FB777DA063AF386525 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4792BA599F44DF617D264BDB /* Pods-QuickChat.debug.xcconfig */,
+				240747936C63AE76E75E826A /* Pods-QuickChat.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD35F3E670B95904BF30485A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3219FB6ED47B8B180698A61 /* Pods_QuickChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 116EB31224F41BB200EE3465 /* Build configuration list for PBXNativeTarget "QuickChat" */;
 			buildPhases = (
+				3CBD65500CF01A5C254B6E5B /* [CP] Check Pods Manifest.lock */,
 				116EB2FA24F41BAE00EE3465 /* Sources */,
 				116EB2FB24F41BAE00EE3465 /* Frameworks */,
 				116EB2FC24F41BAE00EE3465 /* Resources */,
+				7B9C7501A0030107FDE0F050 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,6 +199,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CBD65500CF01A5C254B6E5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B9C7501A0030107FDE0F050 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickChat/Pods-QuickChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickChat/Pods-QuickChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickChat/Pods-QuickChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		116EB2FA24F41BAE00EE3465 /* Sources */ = {
@@ -326,6 +395,7 @@
 		};
 		116EB31324F41BB200EE3465 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4792BA599F44DF617D264BDB /* Pods-QuickChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -344,6 +414,7 @@
 		};
 		116EB31424F41BB200EE3465 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 240747936C63AE76E75E826A /* Pods-QuickChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
