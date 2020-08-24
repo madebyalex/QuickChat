@@ -2,6 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>_fonts/Nunito/Nunito-Regular.ttf</string>
+		<string>_fonts/Nunito/Nunito-Italic.ttf</string>
+		<string>_fonts/Nunito/Nunito-SemiBold.ttf</string>
+		<string>_fonts/Nunito/Nunito-SemiBoldItalic.ttf</string>
+		<string>_fonts/Nunito/Nunito-Bold.ttf</string>
+		<string>_fonts/Nunito/Nunito-BoldItalic.ttf</string>
+		<string>_fonts/Nunito/Nunito-ExtraBold.ttf</string>
+		<string>_fonts/Nunito/Nunito-ExtraBoldItalic.ttf</string>
+		<string>_fonts/Nunito/Nunito-Light.ttf</string>
+		<string>_fonts/Nunito/Nunito-LightItalic.ttf</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

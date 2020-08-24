@@ -13,6 +13,8 @@
 		116EB30924F41BAE00EE3465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116EB30724F41BAE00EE3465 /* Main.storyboard */; };
 		116EB30B24F41BB200EE3465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116EB30A24F41BB200EE3465 /* Assets.xcassets */; };
 		116EB30E24F41BB200EE3465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116EB30C24F41BB200EE3465 /* LaunchScreen.storyboard */; };
+		116EB31624F41DFA00EE3465 /* _fonts in Resources */ = {isa = PBXBuildFile; fileRef = 116EB31524F41DFA00EE3465 /* _fonts */; };
+		116EB31824F4333800EE3465 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EB31724F4333800EE3465 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		116EB30A24F41BB200EE3465 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		116EB30D24F41BB200EE3465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		116EB30F24F41BB200EE3465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		116EB31524F41DFA00EE3465 /* _fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _fonts; sourceTree = "<group>"; };
+		116EB31724F4333800EE3465 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +65,10 @@
 				116EB30524F41BAE00EE3465 /* ViewController.swift */,
 				116EB30724F41BAE00EE3465 /* Main.storyboard */,
 				116EB30A24F41BB200EE3465 /* Assets.xcassets */,
+				116EB31524F41DFA00EE3465 /* _fonts */,
 				116EB30C24F41BB200EE3465 /* LaunchScreen.storyboard */,
 				116EB30F24F41BB200EE3465 /* Info.plist */,
+				116EB31724F4333800EE3465 /* RoundedButton.swift */,
 			);
 			path = QuickChat;
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 				116EB30E24F41BB200EE3465 /* LaunchScreen.storyboard in Resources */,
 				116EB30B24F41BB200EE3465 /* Assets.xcassets in Resources */,
 				116EB30924F41BAE00EE3465 /* Main.storyboard in Resources */,
+				116EB31624F41DFA00EE3465 /* _fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +148,7 @@
 				116EB30624F41BAE00EE3465 /* ViewController.swift in Sources */,
 				116EB30224F41BAE00EE3465 /* AppDelegate.swift in Sources */,
 				116EB30424F41BAE00EE3465 /* SceneDelegate.swift in Sources */,
+				116EB31824F4333800EE3465 /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
