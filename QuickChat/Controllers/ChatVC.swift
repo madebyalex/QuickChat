@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ChatVC.swift
 //  QuickChat
 //
 //  Created by Alexander on 24.08.2020.
@@ -8,15 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ChatVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        // Do any additional setup after loading the view.
     }
 
-
 }
-
