@@ -31,16 +31,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="jIQ-r7-NO9" userLabel="Logo wrap">
-                                <rect key="frame" x="24" y="272.5" width="366" height="103.5"/>
+                                <rect key="frame" x="24" y="263" width="366" height="122"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcD-1f-KNX" userLabel="introLabel">
-                                        <rect key="frame" x="0.0" y="0.0" width="366" height="31.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcD-1f-KNX" userLabel="introLabel" customClass="CLTypingLabel" customModule="CLTypingLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
                                         <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="23"/>
                                         <color key="textColor" name="Dark"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="charInterval">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QuickChat_logo" translatesAutoresizingMaskIntoConstraints="NO" id="OIK-QX-HKv" userLabel="Logo">
-                                        <rect key="frame" x="0.0" y="43.5" width="366" height="60"/>
+                                        <rect key="frame" x="0.0" y="62" width="366" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="4LA-7t-MUM"/>
                                         </constraints>
@@ -96,6 +101,7 @@
                     <navigationItem key="navigationItem" id="JPg-HZ-lSK"/>
                     <connections>
                         <outlet property="introLabel" destination="dcD-1f-KNX" id="lbD-sr-fX1"/>
+                        <outlet property="mainLogo" destination="OIK-QX-HKv" id="BaY-ga-UKY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -115,23 +121,23 @@
                                 <color key="backgroundColor" name="Primary"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Pof-Jt-AWY">
-                                <rect key="frame" x="32" y="266.5" width="350" height="275"/>
+                                <rect key="frame" x="32" y="270" width="350" height="268"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="R4l-By-WeX">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="87.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="84"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="CWg-CF-iQo">
-                                                <rect key="frame" x="0.0" y="0.0" width="85.5" height="27.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="85" height="24"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail-light" translatesAutoresizingMaskIntoConstraints="NO" id="6Il-d1-Ka3">
-                                                        <rect key="frame" x="0.0" y="2" width="24" height="24"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="24" id="DgP-gV-Vv1"/>
                                                             <constraint firstAttribute="width" constant="24" id="KC2-fx-DbF"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ou-YE-ana">
-                                                        <rect key="frame" x="36" y="0.0" width="49.5" height="27.5"/>
+                                                        <rect key="frame" x="36" y="0.5" width="49" height="23.5"/>
                                                         <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="20"/>
                                                         <color key="textColor" name="PrimaryLightest"/>
                                                         <nil key="highlightedColor"/>
@@ -139,7 +145,7 @@
                                                 </subviews>
                                             </stackView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qpN-Tj-E91">
-                                                <rect key="frame" x="0.0" y="39.5" width="350" height="48"/>
+                                                <rect key="frame" x="0.0" y="36" width="350" height="48"/>
                                                 <color key="backgroundColor" red="0.10196078431372549" green="0.52941176470588236" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="gIK-pP-O3C"/>
@@ -155,20 +161,20 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="IF9-h9-Gay">
-                                        <rect key="frame" x="0.0" y="111.5" width="350" height="87.5"/>
+                                        <rect key="frame" x="0.0" y="108" width="350" height="84"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="hLY-Od-ZVC">
-                                                <rect key="frame" x="0.0" y="0.0" width="126" height="27.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="24"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock-light" translatesAutoresizingMaskIntoConstraints="NO" id="nVU-Y0-nTZ">
-                                                        <rect key="frame" x="0.0" y="2" width="24" height="24"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="24" id="OEM-hO-7Kn"/>
                                                             <constraint firstAttribute="height" constant="24" id="djn-4q-CAq"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onM-ue-5uH">
-                                                        <rect key="frame" x="36" y="0.0" width="90" height="27.5"/>
+                                                        <rect key="frame" x="36" y="0.5" width="88.5" height="23.5"/>
                                                         <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="20"/>
                                                         <color key="textColor" name="PrimaryLightest"/>
                                                         <nil key="highlightedColor"/>
@@ -176,7 +182,7 @@
                                                 </subviews>
                                             </stackView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n6D-39-UdC">
-                                                <rect key="frame" x="0.0" y="39.5" width="350" height="48"/>
+                                                <rect key="frame" x="0.0" y="36" width="350" height="48"/>
                                                 <color key="backgroundColor" red="0.10196078431372549" green="0.52941176470588236" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="6ob-Ct-FUN"/>
@@ -192,7 +198,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbE-l8-ahM" customClass="RoundedButton" customModule="QuickChat" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="223" width="350" height="52"/>
+                                        <rect key="frame" x="0.0" y="216" width="350" height="52"/>
                                         <color key="backgroundColor" name="PrimaryLightest"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="52" id="JKo-gj-L30"/>
@@ -275,23 +281,23 @@
                                 <color key="backgroundColor" name="PrimaryLightest"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="6Pq-bl-yXV">
-                                <rect key="frame" x="32" y="266.5" width="350" height="275"/>
+                                <rect key="frame" x="32" y="270" width="350" height="268"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Wjy-hf-3cC">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="87.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="84"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Lku-0b-xLc">
-                                                <rect key="frame" x="0.0" y="0.0" width="85.5" height="27.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="85" height="24"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-email" translatesAutoresizingMaskIntoConstraints="NO" id="sZW-iC-v3u">
-                                                        <rect key="frame" x="0.0" y="2" width="24" height="24"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="24" id="aRa-8y-CGs"/>
                                                             <constraint firstAttribute="width" constant="24" id="wHz-kH-PkJ"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7s-KM-Pk5">
-                                                        <rect key="frame" x="36" y="0.0" width="49.5" height="27.5"/>
+                                                        <rect key="frame" x="36" y="0.5" width="49" height="23.5"/>
                                                         <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="20"/>
                                                         <color key="textColor" name="Dark"/>
                                                         <nil key="highlightedColor"/>
@@ -299,7 +305,7 @@
                                                 </subviews>
                                             </stackView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dEO-mu-G6c">
-                                                <rect key="frame" x="0.0" y="39.5" width="350" height="48"/>
+                                                <rect key="frame" x="0.0" y="36" width="350" height="48"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="jbh-mB-RZW"/>
@@ -315,20 +321,20 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="anw-CE-eOz">
-                                        <rect key="frame" x="0.0" y="111.5" width="350" height="87.5"/>
+                                        <rect key="frame" x="0.0" y="108" width="350" height="84"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="kuK-OR-v0c">
-                                                <rect key="frame" x="0.0" y="0.0" width="126" height="27.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="24"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-padlock" translatesAutoresizingMaskIntoConstraints="NO" id="hRW-Gc-Yeb">
-                                                        <rect key="frame" x="0.0" y="2" width="24" height="24"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="24" id="2m6-Qt-3yX"/>
                                                             <constraint firstAttribute="height" constant="24" id="pjw-QT-ZAv"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72j-eQ-rsd">
-                                                        <rect key="frame" x="36" y="0.0" width="90" height="27.5"/>
+                                                        <rect key="frame" x="36" y="0.5" width="88.5" height="23.5"/>
                                                         <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="20"/>
                                                         <color key="textColor" name="Dark"/>
                                                         <nil key="highlightedColor"/>
@@ -336,7 +342,7 @@
                                                 </subviews>
                                             </stackView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6EV-jA-qja">
-                                                <rect key="frame" x="0.0" y="39.5" width="350" height="48"/>
+                                                <rect key="frame" x="0.0" y="36" width="350" height="48"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="gcj-n4-ixc"/>
@@ -352,7 +358,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzF-91-HqU" customClass="RoundedButton" customModule="QuickChat" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="223" width="350" height="52"/>
+                                        <rect key="frame" x="0.0" y="216" width="350" height="52"/>
                                         <color key="backgroundColor" name="Primary"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="52" id="GLg-jv-yRN"/>

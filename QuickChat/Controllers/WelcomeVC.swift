@@ -7,26 +7,42 @@
 //
 
 import UIKit
+import CLTypingLabel
 
 class WelcomeVC: UIViewController {
-    @IBOutlet weak var introLabel: UILabel!
+    @IBOutlet weak var mainLogo: UIImageView!
+    @IBOutlet weak var introLabel: CLTypingLabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        introLabel.text = ""
+//        Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { (timer) in
+//            self.mainLogo.fadeIn(2)
+//        }
         
-        let introText = "Welcome to"
-        var charIndex = 1
-        
-        for letter in introText {
-            Timer.scheduledTimer(withTimeInterval: 0.1 * Double(charIndex), repeats: false) { (timer) in
-                self.introLabel.text?.append(letter)
-            }
-            
-            charIndex += 1
-        }
+        introLabel.text = "Welcome to"
+//        introLabel.charInterval = 0.15
+//        introLabel.onTypingAnimationFinished = {
+//            self.mainLogo.fadeIn(0.6)
+//        }
     }
-    
+}
+
+extension UIView {
+  func fadeTo(_ alpha: CGFloat, duration: TimeInterval = 0.3) {
+    DispatchQueue.main.async {
+      UIView.animate(withDuration: duration) {
+        self.alpha = alpha
+      }
+    }
+  }
+
+  func fadeIn(_ duration: TimeInterval = 0.3) {
+    fadeTo(1.0, duration: duration)
+  }
+
+  func fadeOut(_ duration: TimeInterval = 0.3) {
+    fadeTo(0.0, duration: duration)
+  }
 }
 
