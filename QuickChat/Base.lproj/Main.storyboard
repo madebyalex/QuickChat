@@ -31,10 +31,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="jIQ-r7-NO9" userLabel="Logo wrap">
-                                <rect key="frame" x="24" y="263" width="366" height="122"/>
+                                <rect key="frame" x="24" y="274.5" width="366" height="99"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcD-1f-KNX" userLabel="introLabel" customClass="CLTypingLabel" customModule="CLTypingLabel">
-                                        <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcD-1f-KNX" userLabel="introLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="27"/>
                                         <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="23"/>
                                         <color key="textColor" name="Dark"/>
                                         <nil key="highlightedColor"/>
@@ -45,7 +45,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QuickChat_logo" translatesAutoresizingMaskIntoConstraints="NO" id="OIK-QX-HKv" userLabel="Logo">
-                                        <rect key="frame" x="0.0" y="62" width="366" height="60"/>
+                                        <rect key="frame" x="0.0" y="39" width="366" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="4LA-7t-MUM"/>
                                         </constraints>
@@ -101,7 +101,6 @@
                     <navigationItem key="navigationItem" id="JPg-HZ-lSK"/>
                     <connections>
                         <outlet property="introLabel" destination="dcD-1f-KNX" id="lbD-sr-fX1"/>
-                        <outlet property="mainLogo" destination="OIK-QX-HKv" id="BaY-ga-UKY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
