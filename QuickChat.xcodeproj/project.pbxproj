@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		115E57C724F51FA100DD2269 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 115E57C624F51FA100DD2269 /* GoogleService-Info.plist */; };
+		115E57C924F59B6C00DD2269 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E57C824F59B6C00DD2269 /* Constants.swift */; };
 		1160251624F44C6700FD079D /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1160251524F44C6700FD079D /* RegisterVC.swift */; };
 		1160251824F44C7700FD079D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1160251724F44C7700FD079D /* LoginVC.swift */; };
 		1160251A24F44C8600FD079D /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1160251924F44C8600FD079D /* ChatVC.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		115E57C624F51FA100DD2269 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		115E57C824F59B6C00DD2269 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1160251524F44C6700FD079D /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		1160251724F44C7700FD079D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		1160251924F44C8600FD079D /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				116EB30F24F41BB200EE3465 /* Info.plist */,
 				115E57C624F51FA100DD2269 /* GoogleService-Info.plist */,
 				116EB31724F4333800EE3465 /* RoundedButton.swift */,
+				115E57C824F59B6C00DD2269 /* Constants.swift */,
 			);
 			path = QuickChat;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				116EB30424F41BAE00EE3465 /* SceneDelegate.swift in Sources */,
 				116EB31824F4333800EE3465 /* RoundedButton.swift in Sources */,
 				1160251624F44C6700FD079D /* RegisterVC.swift in Sources */,
+				115E57C924F59B6C00DD2269 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +408,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZN234ZPN46;
 				INFOPLIST_FILE = QuickChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -423,6 +428,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZN234ZPN46;
 				INFOPLIST_FILE = QuickChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

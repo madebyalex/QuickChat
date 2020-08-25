@@ -13,8 +13,9 @@ class ChatVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationItem.title = K.appName
         self.navigationItem.setHidesBackButton(true, animated: true)
+        
     }
     
     @IBAction func logoutPressed(_ sender: UIBarButtonItem) {
@@ -22,7 +23,7 @@ class ChatVC: UIViewController {
         do {
             try firebaseAuth.signOut()
             
-            self.performSegue(withIdentifier: "LogoutToWelcome", sender: self)
+            navigationController?.popToRootViewController(animated: true)
             
         } catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
