@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		115E57C724F51FA100DD2269 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 115E57C624F51FA100DD2269 /* GoogleService-Info.plist */; };
 		1160251624F44C6700FD079D /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1160251524F44C6700FD079D /* RegisterVC.swift */; };
 		1160251824F44C7700FD079D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1160251724F44C7700FD079D /* LoginVC.swift */; };
 		1160251A24F44C8600FD079D /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1160251924F44C8600FD079D /* ChatVC.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		115E57C624F51FA100DD2269 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1160251524F44C6700FD079D /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		1160251724F44C7700FD079D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		1160251924F44C8600FD079D /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				116EB31524F41DFA00EE3465 /* _fonts */,
 				116EB30C24F41BB200EE3465 /* LaunchScreen.storyboard */,
 				116EB30F24F41BB200EE3465 /* Info.plist */,
+				115E57C624F51FA100DD2269 /* GoogleService-Info.plist */,
 				116EB31724F4333800EE3465 /* RoundedButton.swift */,
 			);
 			path = QuickChat;
@@ -119,7 +122,6 @@
 				4792BA599F44DF617D264BDB /* Pods-QuickChat.debug.xcconfig */,
 				240747936C63AE76E75E826A /* Pods-QuickChat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -142,6 +144,7 @@
 				116EB2FA24F41BAE00EE3465 /* Sources */,
 				116EB2FB24F41BAE00EE3465 /* Frameworks */,
 				116EB2FC24F41BAE00EE3465 /* Resources */,
+				D5EB59CFED2C76B3456460D6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,6 +195,7 @@
 			files = (
 				116EB30E24F41BB200EE3465 /* LaunchScreen.storyboard in Resources */,
 				116EB30B24F41BB200EE3465 /* Assets.xcassets in Resources */,
+				115E57C724F51FA100DD2269 /* GoogleService-Info.plist in Resources */,
 				116EB30924F41BAE00EE3465 /* Main.storyboard in Resources */,
 				116EB31624F41DFA00EE3465 /* _fonts in Resources */,
 			);
@@ -220,6 +224,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5EB59CFED2C76B3456460D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickChat/Pods-QuickChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickChat/Pods-QuickChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickChat/Pods-QuickChat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
