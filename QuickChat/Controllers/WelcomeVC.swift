@@ -14,6 +14,8 @@ class WelcomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        
         introLabel.text = ""
         
         let introText = "Welcome to"
