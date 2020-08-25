@@ -18,7 +18,7 @@ class WelcomeVC: UIViewController {
         
         introLabel.text = ""
         
-        let introText = "Welcome to"
+        let introText = K.welcomeMessage
         var charIndex = 1
         
         for letter in introText {
