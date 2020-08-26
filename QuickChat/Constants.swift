@@ -10,7 +10,7 @@ struct K {
     static let appName = "⚡️ QuickChat"
     static let welcomeMessage = "Welcome to"
     static let cellIdentifier = "ReusableCell"
-    static let cellNibName = "MesageCell"
+    static let cellNibName = "MessageCell"
     static let registerSeque = "RegisterToChat"
     static let loginSeque = "LoginToChat"
     

@@ -19,15 +19,19 @@ class ChatVC: UIViewController {
         super.viewDidLoad()
         
         tableView.dataSource = self
-//        tableView.delegate = self
         self.navigationItem.title = K.appName
         self.navigationItem.setHidesBackButton(true, animated: true)
         
-        let messagePlaceholder = messageTextField.placeholder ?? ""
         
+        // Customizing the placeholder's color
+        let messagePlaceholder = messageTextField.placeholder ?? ""
         let placeholderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.6413473887)
         
         messageTextField.attributedPlaceholder = NSAttributedString(string: messagePlaceholder, attributes: [NSAttributedString.Key.foregroundColor : placeholderColor])
+        
+        // Registering the message nib
+        tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
+        
     }
     
     @IBAction func logoutPressed(_ sender: UIBarButtonItem) {
@@ -50,18 +54,12 @@ extension ChatVC: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
         
-        cell.textLabel?.text = messages[indexPath.row].body
+        cell.messageLabel.text = messages[indexPath.row].body
         
         return cell
     }
 
 }
-
-//extension ChatVC: UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print(indexPath.row)
-//    }
-//}
 

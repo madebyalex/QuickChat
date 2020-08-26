@@ -21,6 +21,8 @@
 		116EB31624F41DFA00EE3465 /* _fonts in Resources */ = {isa = PBXBuildFile; fileRef = 116EB31524F41DFA00EE3465 /* _fonts */; };
 		116EB31824F4333800EE3465 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EB31724F4333800EE3465 /* RoundedButton.swift */; };
 		11D9564A24F666E1002CD9CF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D9564924F666E1002CD9CF /* Message.swift */; };
+		11D9564D24F673DC002CD9CF /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D9564B24F673DC002CD9CF /* MessageCell.swift */; };
+		11D9564E24F673DC002CD9CF /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D9564C24F673DC002CD9CF /* MessageCell.xib */; };
 		5CBDDF8020C900F006F12CB6 /* Pods_QuickChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3219FB6ED47B8B180698A61 /* Pods_QuickChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		116EB31524F41DFA00EE3465 /* _fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _fonts; sourceTree = "<group>"; };
 		116EB31724F4333800EE3465 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		11D9564924F666E1002CD9CF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		11D9564B24F673DC002CD9CF /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		11D9564C24F673DC002CD9CF /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		240747936C63AE76E75E826A /* Pods-QuickChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickChat.release.xcconfig"; path = "Target Support Files/Pods-QuickChat/Pods-QuickChat.release.xcconfig"; sourceTree = "<group>"; };
 		4792BA599F44DF617D264BDB /* Pods-QuickChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickChat.debug.xcconfig"; path = "Target Support Files/Pods-QuickChat/Pods-QuickChat.debug.xcconfig"; sourceTree = "<group>"; };
 		A3219FB6ED47B8B180698A61 /* Pods_QuickChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +122,8 @@
 		116EB31B24F44B9500EE3465 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				11D9564B24F673DC002CD9CF /* MessageCell.swift */,
+				11D9564C24F673DC002CD9CF /* MessageCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				116EB30E24F41BB200EE3465 /* LaunchScreen.storyboard in Resources */,
+				11D9564E24F673DC002CD9CF /* MessageCell.xib in Resources */,
 				116EB30B24F41BB200EE3465 /* Assets.xcassets in Resources */,
 				115E57C724F51FA100DD2269 /* GoogleService-Info.plist in Resources */,
 				116EB30924F41BAE00EE3465 /* Main.storyboard in Resources */,
@@ -257,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				116EB30624F41BAE00EE3465 /* WelcomeVC.swift in Sources */,
+				11D9564D24F673DC002CD9CF /* MessageCell.swift in Sources */,
 				1160251A24F44C8600FD079D /* ChatVC.swift in Sources */,
 				116EB30224F41BAE00EE3465 /* AppDelegate.swift in Sources */,
 				11D9564A24F666E1002CD9CF /* Message.swift in Sources */,

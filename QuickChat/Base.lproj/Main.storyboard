@@ -145,7 +145,7 @@
                                                     <constraint firstAttribute="height" constant="48" id="gIK-pP-O3C"/>
                                                 </constraints>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="22"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
@@ -182,7 +182,7 @@
                                                     <constraint firstAttribute="height" constant="48" id="6ob-Ct-FUN"/>
                                                 </constraints>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="22"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                         </subviews>
@@ -250,35 +250,25 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="mhO-e7-V4c">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mpp-zL-Mtx">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mpp-zL-Mtx">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="713"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ReusableCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="u1s-y1-0eX">
-                                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u1s-y1-0eX" id="zpj-Qy-tsR">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </tableViewCellContentView>
-                                            </tableViewCell>
-                                        </prototypes>
                                     </tableView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Pe-yN-MOY">
                                         <rect key="frame" x="0.0" y="714" width="414" height="128"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="N3t-QH-ftN">
-                                                <rect key="frame" x="32" y="24" width="350" height="48"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="N3t-QH-ftN">
+                                                <rect key="frame" x="24" y="24" width="366" height="48"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a message..." textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bKR-v5-KBV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="286" height="48"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="294" height="48"/>
                                                         <color key="backgroundColor" red="0.10196078431372549" green="0.52941176470588236" blue="0.2627450980392157" alpha="0.5233839897260274" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="48" id="HOG-cB-n83"/>
                                                         </constraints>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="22"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="send"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -287,7 +277,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQP-0D-gGf" userLabel="Send Button">
-                                                        <rect key="frame" x="302" y="0.0" width="48" height="48"/>
+                                                        <rect key="frame" x="318" y="0.0" width="48" height="48"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="48" id="9dq-04-NhO"/>
@@ -307,9 +297,9 @@
                                         <color key="backgroundColor" name="Primary"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="Rhs-Uj-nCj"/>
-                                            <constraint firstAttribute="trailing" secondItem="N3t-QH-ftN" secondAttribute="trailing" constant="32" id="gvL-DC-no0"/>
+                                            <constraint firstAttribute="trailing" secondItem="N3t-QH-ftN" secondAttribute="trailing" constant="24" id="gvL-DC-no0"/>
                                             <constraint firstItem="N3t-QH-ftN" firstAttribute="top" secondItem="4Pe-yN-MOY" secondAttribute="top" constant="24" id="oij-Cu-Mbf"/>
-                                            <constraint firstItem="N3t-QH-ftN" firstAttribute="leading" secondItem="4Pe-yN-MOY" secondAttribute="leading" constant="32" id="qsp-Kd-JiE"/>
+                                            <constraint firstItem="N3t-QH-ftN" firstAttribute="leading" secondItem="4Pe-yN-MOY" secondAttribute="leading" constant="24" id="qsp-Kd-JiE"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -384,7 +374,7 @@
                                                     <constraint firstAttribute="height" constant="48" id="jbh-mB-RZW"/>
                                                 </constraints>
                                                 <color key="textColor" name="Dark"/>
-                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="22"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
@@ -421,7 +411,7 @@
                                                     <constraint firstAttribute="height" constant="48" id="gcj-n4-ixc"/>
                                                 </constraints>
                                                 <color key="textColor" name="Dark"/>
-                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="22"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                         </subviews>
