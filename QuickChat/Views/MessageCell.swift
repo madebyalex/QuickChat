@@ -16,8 +16,15 @@ class MessageCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        messageBubble.layer.cornerRadius = messageBubble.frame.size.height / 4
-        // Initialization code
+        // Separate corner radius for views
+//        let path = UIBezierPath(roundedRect:messageBubble.bounds, byRoundingCorners:[.topLeft, .bottomLeft], cornerRadii: CGSize(width: 6, height: 6))
+//        let maskLayer = CAShapeLayer()
+//
+//        maskLayer.path = path.cgPath
+//        messageBubble.layer.mask = maskLayer
+        
+//        messageBubble.layer.cornerRadius = messageBubble.frame.size.height / 4
+        messageBubble.layer.cornerRadius = 6
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

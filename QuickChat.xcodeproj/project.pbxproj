@@ -20,6 +20,7 @@
 		116EB30E24F41BB200EE3465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116EB30C24F41BB200EE3465 /* LaunchScreen.storyboard */; };
 		116EB31624F41DFA00EE3465 /* _fonts in Resources */ = {isa = PBXBuildFile; fileRef = 116EB31524F41DFA00EE3465 /* _fonts */; };
 		116EB31824F4333800EE3465 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EB31724F4333800EE3465 /* RoundedButton.swift */; };
+		11B1EAA824F6D5FF00E62C0F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1EAA724F6D5FF00E62C0F /* CustomButton.swift */; };
 		11D9564A24F666E1002CD9CF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D9564924F666E1002CD9CF /* Message.swift */; };
 		11D9564D24F673DC002CD9CF /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D9564B24F673DC002CD9CF /* MessageCell.swift */; };
 		11D9564E24F673DC002CD9CF /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D9564C24F673DC002CD9CF /* MessageCell.xib */; };
@@ -42,6 +43,7 @@
 		116EB30F24F41BB200EE3465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		116EB31524F41DFA00EE3465 /* _fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _fonts; sourceTree = "<group>"; };
 		116EB31724F4333800EE3465 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		11B1EAA724F6D5FF00E62C0F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		11D9564924F666E1002CD9CF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		11D9564B24F673DC002CD9CF /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		11D9564C24F673DC002CD9CF /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				115E57C624F51FA100DD2269 /* GoogleService-Info.plist */,
 				116EB31724F4333800EE3465 /* RoundedButton.swift */,
 				115E57C824F59B6C00DD2269 /* Constants.swift */,
+				11B1EAA724F6D5FF00E62C0F /* CustomButton.swift */,
 			);
 			path = QuickChat;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				11D9564A24F666E1002CD9CF /* Message.swift in Sources */,
 				1160251824F44C7700FD079D /* LoginVC.swift in Sources */,
 				116EB30424F41BAE00EE3465 /* SceneDelegate.swift in Sources */,
+				11B1EAA824F6D5FF00E62C0F /* CustomButton.swift in Sources */,
 				116EB31824F4333800EE3465 /* RoundedButton.swift in Sources */,
 				1160251624F44C6700FD079D /* RegisterVC.swift in Sources */,
 				115E57C924F59B6C00DD2269 /* Constants.swift in Sources */,

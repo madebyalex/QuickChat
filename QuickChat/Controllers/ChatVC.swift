@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 
+
 class ChatVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextField: UITextField!
@@ -23,7 +24,13 @@ class ChatVC: UIViewController {
         self.navigationItem.setHidesBackButton(true, animated: true)
         
         
-        // Customizing the placeholder's color
+        // Customizing the Search field
+//        let transpColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
+//        messageTextField.layer.borderColor = (transpColor as! CGColor)
+        
+        messageTextField.layer.cornerRadius = 0
+        messageTextField.layer.borderWidth = 0.0
+        
         let messagePlaceholder = messageTextField.placeholder ?? ""
         let placeholderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.6413473887)
         

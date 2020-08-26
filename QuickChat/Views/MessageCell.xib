@@ -22,14 +22,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="354" height="69"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="eoH-9B-L1m">
-                        <rect key="frame" x="10" y="10" width="334" height="49"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="eoH-9B-L1m">
+                        <rect key="frame" x="24" y="10" width="306" height="49"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wup-va-TS7" userLabel="Message Bubble">
-                                <rect key="frame" x="0.0" y="0.0" width="278" height="49"/>
+                                <rect key="frame" x="0.0" y="0.0" width="242" height="49"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzw-HS-Zwv">
-                                        <rect key="frame" x="10" y="10" width="258" height="29"/>
+                                        <rect key="frame" x="10" y="10" width="222" height="29"/>
                                         <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -43,8 +43,15 @@
                                     <constraint firstItem="Nzw-HS-Zwv" firstAttribute="top" secondItem="wup-va-TS7" secondAttribute="top" constant="10" id="zXv-Y1-eCm"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speech-arrow-right-v2" translatesAutoresizingMaskIntoConstraints="NO" id="Cmw-j5-T7f">
+                                <rect key="frame" x="242" y="0.0" width="24" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="TuU-b6-yoP"/>
+                                    <constraint firstAttribute="height" constant="32" id="WOM-pZ-xA9"/>
+                                </constraints>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar_Me" translatesAutoresizingMaskIntoConstraints="NO" id="GKw-fs-yza">
-                                <rect key="frame" x="294" y="0.0" width="40" height="40"/>
+                                <rect key="frame" x="266" y="0.0" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="7AO-ZO-SwR"/>
                                     <constraint firstAttribute="height" constant="40" id="UN0-ol-BPG"/>
@@ -54,10 +61,10 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="eoH-9B-L1m" secondAttribute="trailing" constant="10" id="2jp-at-WuV"/>
+                    <constraint firstAttribute="trailing" secondItem="eoH-9B-L1m" secondAttribute="trailing" constant="24" id="2jp-at-WuV"/>
                     <constraint firstAttribute="bottom" secondItem="eoH-9B-L1m" secondAttribute="bottom" constant="10" id="iWo-ff-uh8"/>
                     <constraint firstItem="eoH-9B-L1m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="jdc-EW-O5s"/>
-                    <constraint firstItem="eoH-9B-L1m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="xZJ-l2-OHW"/>
+                    <constraint firstItem="eoH-9B-L1m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="xZJ-l2-OHW"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -71,6 +78,7 @@
     </objects>
     <resources>
         <image name="Avatar_Me" width="40" height="40"/>
+        <image name="speech-arrow-right-v2" width="20" height="20"/>
         <namedColor name="Primary">
             <color red="0.10999999940395355" green="0.6940000057220459" blue="0.3449999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
