@@ -20,6 +20,7 @@
 		116EB30E24F41BB200EE3465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116EB30C24F41BB200EE3465 /* LaunchScreen.storyboard */; };
 		116EB31624F41DFA00EE3465 /* _fonts in Resources */ = {isa = PBXBuildFile; fileRef = 116EB31524F41DFA00EE3465 /* _fonts */; };
 		116EB31824F4333800EE3465 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116EB31724F4333800EE3465 /* RoundedButton.swift */; };
+		11D9564A24F666E1002CD9CF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D9564924F666E1002CD9CF /* Message.swift */; };
 		5CBDDF8020C900F006F12CB6 /* Pods_QuickChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3219FB6ED47B8B180698A61 /* Pods_QuickChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		116EB30F24F41BB200EE3465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		116EB31524F41DFA00EE3465 /* _fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _fonts; sourceTree = "<group>"; };
 		116EB31724F4333800EE3465 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		11D9564924F666E1002CD9CF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		240747936C63AE76E75E826A /* Pods-QuickChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickChat.release.xcconfig"; path = "Target Support Files/Pods-QuickChat/Pods-QuickChat.release.xcconfig"; sourceTree = "<group>"; };
 		4792BA599F44DF617D264BDB /* Pods-QuickChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickChat.debug.xcconfig"; path = "Target Support Files/Pods-QuickChat/Pods-QuickChat.debug.xcconfig"; sourceTree = "<group>"; };
 		A3219FB6ED47B8B180698A61 /* Pods_QuickChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +110,7 @@
 		116EB31A24F44B8F00EE3465 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				11D9564924F666E1002CD9CF /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				116EB30624F41BAE00EE3465 /* WelcomeVC.swift in Sources */,
 				1160251A24F44C8600FD079D /* ChatVC.swift in Sources */,
 				116EB30224F41BAE00EE3465 /* AppDelegate.swift in Sources */,
+				11D9564A24F666E1002CD9CF /* Message.swift in Sources */,
 				1160251824F44C7700FD079D /* LoginVC.swift in Sources */,
 				116EB30424F41BAE00EE3465 /* SceneDelegate.swift in Sources */,
 				116EB31824F4333800EE3465 /* RoundedButton.swift in Sources */,

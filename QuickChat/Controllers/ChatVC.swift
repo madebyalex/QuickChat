@@ -10,10 +10,16 @@ import UIKit
 import Firebase
 
 class ChatVC: UIViewController {
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextField: UITextField!
+    
+    var messages: [Message] = [Message(sender: "office@google.com", body: "Hi there!"), Message(sender: "hello@alexander.works", body: "Hello, how are you doing?"), Message(sender: "office@google.com", body: "All is good. And you? 😉")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.dataSource = self
+//        tableView.delegate = self
         self.navigationItem.title = K.appName
         self.navigationItem.setHidesBackButton(true, animated: true)
         
@@ -34,8 +40,28 @@ class ChatVC: UIViewController {
         } catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
         }
-        
     }
-    
-    
 }
+
+extension ChatVC: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return messages.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath)
+        
+        cell.textLabel?.text = messages[indexPath.row].body
+        
+        return cell
+    }
+
+}
+
+//extension ChatVC: UITableViewDelegate {
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        print(indexPath.row)
+//    }
+//}
+
