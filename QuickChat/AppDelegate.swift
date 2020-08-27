@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseFirestore
+import IQKeyboardManager
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         FirebaseApp.configure()
+        
+        IQKeyboardManager.shared().isEnabled = true
+        IQKeyboardManager.shared().isEnableAutoToolbar = false
+        IQKeyboardManager.shared().shouldResignOnTouchOutside = true
         
 //        let db = Firestore.firestore()
 //        print(db)
