@@ -70,6 +70,8 @@ class ChatVC: UIViewController {
                             // Retrieve existing messages in the main thread
                             DispatchQueue.main.async {
                                 self.tableView.reloadData()
+                                let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
+                                self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
                             }
                         }
                     }
@@ -85,6 +87,10 @@ class ChatVC: UIViewController {
                     print("There was an issue saving data to Firestore, \(e)")
                 } else {
                     print("Successfully saved data")
+                    
+                    DispatchQueue.main.async {
+                        self.messageTextField.text = ""
+                    }
                 }
             }
         }
@@ -123,6 +129,8 @@ extension ChatVC: UITableViewDataSource {
             cell.rightImageView.isHidden = false
             cell.leftArrow.isHidden = true
             cell.rightArrow.isHidden = false
+            cell.messageBubble.backgroundColor = UIColor(named: K.BrandColors.primary)
+            cell.messageLabel.textColor = .white
         }
         
         // This is a message from another user
