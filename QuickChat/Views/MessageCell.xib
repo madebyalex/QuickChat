@@ -23,13 +23,34 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="eoH-9B-L1m">
-                        <rect key="frame" x="24" y="10" width="306" height="49"/>
+                        <rect key="frame" x="16" y="10" width="322" height="49"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wup-va-TS7" userLabel="Message Bubble">
-                                <rect key="frame" x="0.0" y="0.0" width="242" height="49"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar_You" translatesAutoresizingMaskIntoConstraints="NO" id="GKw-fs-yza" userLabel="Avatar left">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="7AO-ZO-SwR"/>
+                                    <constraint firstAttribute="height" constant="40" id="UN0-ol-BPG"/>
+                                </constraints>
+                            </imageView>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIy-5e-dyC" userLabel="Separator">
+                                <rect key="frame" x="40" y="0.0" width="6" height="49"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="6" id="0hK-TM-QpM"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speech-arrow-left-v2" translatesAutoresizingMaskIntoConstraints="NO" id="XAX-sb-DG9" userLabel="Speech arrow left">
+                                <rect key="frame" x="46" y="0.0" width="16" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="sE1-XQ-Uic"/>
+                                    <constraint firstAttribute="height" constant="28" id="vQi-KI-7gP"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wup-va-TS7" userLabel="Message Bubble" customClass="DesignableButton" customModule="QuickChat" customModuleProvider="target">
+                                <rect key="frame" x="62" y="0.0" width="198" height="43.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzw-HS-Zwv">
-                                        <rect key="frame" x="10" y="10" width="222" height="29"/>
+                                        <rect key="frame" x="10" y="10" width="178" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -42,43 +63,60 @@
                                     <constraint firstAttribute="bottom" secondItem="Nzw-HS-Zwv" secondAttribute="bottom" constant="10" id="zOW-yu-8u7"/>
                                     <constraint firstItem="Nzw-HS-Zwv" firstAttribute="top" secondItem="wup-va-TS7" secondAttribute="top" constant="10" id="zXv-Y1-eCm"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speech-arrow-right-v2" translatesAutoresizingMaskIntoConstraints="NO" id="Cmw-j5-T7f">
-                                <rect key="frame" x="242" y="0.0" width="24" height="28"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speech-arrow-right-v2" translatesAutoresizingMaskIntoConstraints="NO" id="Cmw-j5-T7f" userLabel="Speech arrow right">
+                                <rect key="frame" x="260" y="0.0" width="16" height="28"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="24" id="TuU-b6-yoP"/>
+                                    <constraint firstAttribute="width" constant="16" id="TuU-b6-yoP"/>
                                     <constraint firstAttribute="height" constant="28" id="WOM-pZ-xA9"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar_Me" translatesAutoresizingMaskIntoConstraints="NO" id="GKw-fs-yza">
-                                <rect key="frame" x="266" y="0.0" width="40" height="40"/>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4P-YQ-gUz" userLabel="Separator">
+                                <rect key="frame" x="276" y="0.0" width="6" height="49"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="7AO-ZO-SwR"/>
-                                    <constraint firstAttribute="height" constant="40" id="UN0-ol-BPG"/>
+                                    <constraint firstAttribute="width" constant="6" id="zZe-dO-fcR"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar_Me" translatesAutoresizingMaskIntoConstraints="NO" id="dl3-VQ-ci5" userLabel="Avatar right">
+                                <rect key="frame" x="282" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Ohu-La-0m9"/>
+                                    <constraint firstAttribute="height" constant="40" id="zVv-KD-bxN"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="eoH-9B-L1m" secondAttribute="trailing" constant="24" id="2jp-at-WuV"/>
+                    <constraint firstAttribute="trailing" secondItem="eoH-9B-L1m" secondAttribute="trailing" constant="16" id="2jp-at-WuV"/>
                     <constraint firstAttribute="bottom" secondItem="eoH-9B-L1m" secondAttribute="bottom" constant="10" id="iWo-ff-uh8"/>
                     <constraint firstItem="eoH-9B-L1m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="jdc-EW-O5s"/>
-                    <constraint firstItem="eoH-9B-L1m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="xZJ-l2-OHW"/>
+                    <constraint firstItem="eoH-9B-L1m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="xZJ-l2-OHW"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="leftArrow" destination="XAX-sb-DG9" id="XDj-Ya-X9H"/>
+                <outlet property="leftImageView" destination="GKw-fs-yza" id="eaU-I3-NvY"/>
                 <outlet property="messageBubble" destination="wup-va-TS7" id="ahQ-Pg-R7f"/>
                 <outlet property="messageLabel" destination="Nzw-HS-Zwv" id="duy-Tf-Jv1"/>
-                <outlet property="rightImageView" destination="GKw-fs-yza" id="IuE-Gi-wUZ"/>
+                <outlet property="rightArrow" destination="Cmw-j5-T7f" id="TqI-Bm-Qqk"/>
+                <outlet property="rightImageView" destination="dl3-VQ-ci5" id="lui-uW-85r"/>
             </connections>
             <point key="canvasLocation" x="121.73913043478262" y="106.80803571428571"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="Avatar_Me" width="40" height="40"/>
-        <image name="speech-arrow-right-v2" width="20" height="20"/>
+        <image name="Avatar_You" width="40" height="40"/>
+        <image name="speech-arrow-left-v2" width="11" height="20"/>
+        <image name="speech-arrow-right-v2" width="11" height="20"/>
         <namedColor name="Primary">
             <color red="0.10999999940395355" green="0.6940000057220459" blue="0.3449999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -67,8 +67,8 @@ class ChatVC: UIViewController {
                             self.messages.append(message)
                             
                             
-                            
-                            DispatchQueue.main.async { // Retrieve existing messages in the main thread
+                            // Retrieve existing messages in the main thread
+                            DispatchQueue.main.async {
                                 self.tableView.reloadData()
                             }
                         }
@@ -110,9 +110,32 @@ extension ChatVC: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let message = messages[indexPath.row]
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
         
-        cell.messageLabel.text = messages[indexPath.row].body
+        cell.messageLabel.text = message.body
+        
+        // This is a message from the current user
+        if message.sender == Auth.auth().currentUser?.email {
+            cell.leftImageView.isHidden = true
+            cell.rightImageView.isHidden = false
+            cell.leftArrow.isHidden = true
+            cell.rightArrow.isHidden = false
+        }
+        
+        // This is a message from another user
+        else {
+            cell.leftImageView.isHidden = false
+            cell.rightImageView.isHidden = true
+            cell.leftArrow.isHidden = false
+            cell.rightArrow.isHidden = true
+            cell.messageBubble.backgroundColor = #colorLiteral(red: 0.9843137255, green: 0.7529411765, blue: 0.1764705882, alpha: 0.2)
+            cell.messageLabel.textColor = UIColor(named: K.BrandColors.dark)
+        }
+        
+        
         
         return cell
     }
